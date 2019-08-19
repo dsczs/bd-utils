@@ -1,9 +1,5 @@
 package org.bd.mapreduce;
 
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.StringTokenizer;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -19,11 +15,16 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.StringTokenizer;
+
 /**
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 求平均值<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年10月23日 下午3:07:33 |创建
+ *
+ * @author wpk | 2017年10月23日 下午3:07:33 |创建
  */
 public class Score {
 
@@ -38,14 +39,14 @@ public class Score {
             System.err.println("Usage: Score Average <in> <out>");
             System.exit(2);
         }
-        
-		FileSystem fileSystem = FileSystem.get(conf);
-		
-		if (fileSystem.exists(new Path(otherArgs[1]))) {
-			fileSystem.delete(new Path(otherArgs[1]), true);
-		}
-		
-		Job job = Job.getInstance(conf, Score.class.getSimpleName());
+
+        FileSystem fileSystem = FileSystem.get(conf);
+
+        if (fileSystem.exists(new Path(otherArgs[1]))) {
+            fileSystem.delete(new Path(otherArgs[1]), true);
+        }
+
+        Job job = Job.getInstance(conf, Score.class.getSimpleName());
         job.setJarByClass(Score.class);
         // 设置Map、Combine和Reduce处理类
         job.setMapperClass(Map.class);
@@ -63,7 +64,7 @@ public class Score {
         FileOutputFormat.setOutputPath(job, new Path(otherArgs[1]));//确保输出路径为指定HDFS文件系统，不是则会报错，是则为job设置输出路径
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
-    
+
     public static class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
         // 实现map函数
         public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {

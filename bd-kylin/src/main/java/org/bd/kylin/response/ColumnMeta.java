@@ -6,10 +6,11 @@ import java.io.Serializable;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 元数据（列）对象类<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 下午2:13:08 |创建
+ *
+ * @author wpk | 2017年11月21日 下午2:13:08 |创建
  */
 public class ColumnMeta implements Serializable {
-	
+
     private static final long serialVersionUID = 1L;
     protected String TABLE_CAT;
     protected String TABLE_SCHEM;

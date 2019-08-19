@@ -6,15 +6,16 @@ import java.util.List;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> job请求参数对象<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 上午10:16:39 |创建
+ *
+ * @author wpk | 2017年11月21日 上午10:16:39 |创建
  */
 public class JobListRequest {
 
-	/**
-	 * 状态<br>
-	 * job状态可以参考com.idata.bd.kylin.JobStatusEnum类<br>
-	 * 默认获取所有状态
-	 */
+    /**
+     * 状态<br>
+     * job状态可以参考com.idata.bd.kylin.JobStatusEnum类<br>
+     * 默认获取所有状态
+     */
     private List<Integer> status;
     /**
      * cube名称
@@ -39,7 +40,8 @@ public class JobListRequest {
      */
     private Integer timeFilter;
 
-    public JobListRequest() {}
+    public JobListRequest() {
+    }
 
     public List<Integer> getStatus() {
         return status;

@@ -9,18 +9,19 @@ import org.bd.spark.enums.FormatType;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 写入parquet文件<br>
  * <b>版本历史:</b>
- * @author  wpk | 2018年1月16日 上午11:42:34 |创建
+ *
+ * @author wpk | 2018年1月16日 上午11:42:34 |创建
  */
 public class WriteParquetTest {
 
-	public static void writeParquet(Dataset<Row> ds) throws Exception{
-		Dataset<Row> parquet = WriteComm.getInstance().writeToFile(ds, FormatType.PARQUET, "C:/Users/Administrator/Desktop/sparkFile/role.parquet");
-		parquet.show();
-	}
+    public static void writeParquet(Dataset<Row> ds) throws Exception {
+        Dataset<Row> parquet = WriteComm.getInstance().writeToFile(ds, FormatType.PARQUET, "C:/Users/Administrator/Desktop/sparkFile/role.parquet");
+        parquet.show();
+    }
 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-	}
+    }
 }

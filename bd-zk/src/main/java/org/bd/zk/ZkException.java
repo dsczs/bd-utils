@@ -4,11 +4,12 @@ package org.bd.zk;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> zookeeper运行异常捕获类<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年12月4日 下午9:15:25 |创建
+ *
+ * @author wpk | 2017年12月4日 下午9:15:25 |创建
  */
 public class ZkException extends RuntimeException {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     public ZkException() {
         super();

@@ -2,7 +2,7 @@ package org.bd.kylin;
 
 public class CubeException extends RuntimeException {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     public CubeException() {
         super();

@@ -4,10 +4,11 @@ package org.bd.kylin.response;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> <br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 上午9:53:30 |创建
+ *
+ * @author wpk | 2017年11月21日 上午9:53:30 |创建
  */
 public class HBaseResponse {
-    
+
     private String segmentName;
     private String segmentStatus;
     private String tableName;

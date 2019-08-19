@@ -4,7 +4,8 @@ package org.bd.kylin.request;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 创建cube任务请求参数对象<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 上午9:44:21 |创建
+ *
+ * @author wpk | 2017年11月21日 上午9:44:21 |创建
  */
 public class JobBuildRequest {
 

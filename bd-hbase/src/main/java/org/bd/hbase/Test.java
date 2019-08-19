@@ -6,11 +6,12 @@ import java.io.IOException;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> hbase客户端<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月8日 上午8:54:06 |创建
+ *
+ * @author wpk | 2017年11月8日 上午8:54:06 |创建
  */
 public class Test {
 
-    public static void main(String[] arg) throws IOException{
+    public static void main(String[] arg) throws IOException {
 //    	createTable("wpk_test1","col1");
     	
     	/*List<String> list = new ArrayList<String>();
@@ -21,12 +22,12 @@ public class Test {
         HBaseClient.createTable("wpk_test", list);
         System.out.println("新增结束...");
         HBaseClient.createTable("wpk_test", "codls5");*/
-        
+
 //        HBaseClient.deleteColumnFamily("wpk_test", "codls5");
-    	
+
 //    	HBaseClient.deleteTable("member");
-    	
-    	HBaseClient.listTableNames();
+
+        HBaseClient.listTableNames();
         
         /*Collection<HColumnDescriptor> c = HBaseClient.getHColumnDescriptors("wpk_test");
         for(HColumnDescriptor d : c){

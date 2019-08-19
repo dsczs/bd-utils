@@ -7,11 +7,12 @@ import java.util.Set;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> kylin项目信息<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 下午2:51:46 |创建
+ *
+ * @author wpk | 2017年11月21日 下午2:51:46 |创建
  */
 public class ProjectInfo {
 
-	protected String uuid;
+    protected String uuid;
     protected long last_modified;
     protected String version;
     private String name;
@@ -25,108 +26,108 @@ public class ProjectInfo {
     private List<String> models;
     private Set<String> ext_filters;
 
-	public String getUuid() {
-		return uuid;
-	}
+    public String getUuid() {
+        return uuid;
+    }
 
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
-	}
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
+    }
 
-	public long getLast_modified() {
-		return last_modified;
-	}
+    public long getLast_modified() {
+        return last_modified;
+    }
 
-	public void setLast_modified(long last_modified) {
-		this.last_modified = last_modified;
-	}
+    public void setLast_modified(long last_modified) {
+        this.last_modified = last_modified;
+    }
 
-	public String getVersion() {
-		return version;
-	}
+    public String getVersion() {
+        return version;
+    }
 
-	public void setVersion(String version) {
-		this.version = version;
-	}
+    public void setVersion(String version) {
+        this.version = version;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public Set<String> getTables() {
-		return tables;
-	}
+    public Set<String> getTables() {
+        return tables;
+    }
 
-	public void setTables(Set<String> tables) {
-		this.tables = tables;
-	}
+    public void setTables(Set<String> tables) {
+        this.tables = tables;
+    }
 
-	public String getOwner() {
-		return owner;
-	}
+    public String getOwner() {
+        return owner;
+    }
 
-	public void setOwner(String owner) {
-		this.owner = owner;
-	}
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    public String getStatus() {
+        return status;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-	public long getCreate_time_utc() {
-		return create_time_utc;
-	}
+    public long getCreate_time_utc() {
+        return create_time_utc;
+    }
 
-	public void setCreate_time_utc(long create_time_utc) {
-		this.create_time_utc = create_time_utc;
-	}
+    public void setCreate_time_utc(long create_time_utc) {
+        this.create_time_utc = create_time_utc;
+    }
 
-	public String getLast_update_time() {
-		return last_update_time;
-	}
+    public String getLast_update_time() {
+        return last_update_time;
+    }
 
-	public void setLast_update_time(String last_update_time) {
-		this.last_update_time = last_update_time;
-	}
+    public void setLast_update_time(String last_update_time) {
+        this.last_update_time = last_update_time;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public String getDescription() {
+        return description;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-	public List<Realizations> getRealizations() {
-		return realizations;
-	}
+    public List<Realizations> getRealizations() {
+        return realizations;
+    }
 
-	public void setRealizations(List<Realizations> realizations) {
-		this.realizations = realizations;
-	}
+    public void setRealizations(List<Realizations> realizations) {
+        this.realizations = realizations;
+    }
 
-	public List<String> getModels() {
-		return models;
-	}
+    public List<String> getModels() {
+        return models;
+    }
 
-	public void setModels(List<String> models) {
-		this.models = models;
-	}
+    public void setModels(List<String> models) {
+        this.models = models;
+    }
 
-	public Set<String> getExt_filters() {
-		return ext_filters;
-	}
+    public Set<String> getExt_filters() {
+        return ext_filters;
+    }
 
-	public void setExt_filters(Set<String> ext_filters) {
-		this.ext_filters = ext_filters;
-	}
-    
+    public void setExt_filters(Set<String> ext_filters) {
+        this.ext_filters = ext_filters;
+    }
+
 }

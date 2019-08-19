@@ -7,10 +7,11 @@ import java.util.List;
  * <b>版权信息:</b> big data module<br>
  * <b>功能描述:</b> 查询sql返回的信息<br>
  * <b>版本历史:</b>
- * @author  wpk | 2017年11月21日 下午5:03:27 |创建
+ *
+ * @author wpk | 2017年11月21日 下午5:03:27 |创建
  */
 public class SQLResponse implements Serializable {
-	
+
     private static final long serialVersionUID = 1L;
 
     private List<SelectedColumnMeta> columnMetas;
@@ -26,12 +27,12 @@ public class SQLResponse implements Serializable {
     private boolean hitExceptionCache = false;
     private boolean storageCacheUsed = false;
     private boolean queryPushDown = false;
-    
+
     public SQLResponse() {
     }
 
     public SQLResponse(List<SelectedColumnMeta> columnMetas, List<List<String>> results, int affectedRowCount,
-            boolean isException, String exceptionMessage) {
+                       boolean isException, String exceptionMessage) {
         this.columnMetas = columnMetas;
         this.results = results;
         this.affectedRowCount = affectedRowCount;
@@ -40,7 +41,7 @@ public class SQLResponse implements Serializable {
     }
 
     public SQLResponse(List<SelectedColumnMeta> columnMetas, List<List<String>> results, String cube,
-            int affectedRowCount, boolean isException, String exceptionMessage) {
+                       int affectedRowCount, boolean isException, String exceptionMessage) {
         this.columnMetas = columnMetas;
         this.results = results;
         this.cube = cube;
@@ -50,7 +51,7 @@ public class SQLResponse implements Serializable {
     }
 
     public SQLResponse(List<SelectedColumnMeta> columnMetas, List<List<String>> results, String cube,
-            int affectedRowCount, boolean isException, String exceptionMessage, boolean isPartial, boolean isPushDown) {
+                       int affectedRowCount, boolean isException, String exceptionMessage, boolean isPartial, boolean isPushDown) {
         this.columnMetas = columnMetas;
         this.results = results;
         this.cube = cube;

@@ -1,6 +1,6 @@
 package org.bd.hive.udaf;
 
 
-public class HiveAvg { 
+public class HiveAvg {
 
 }
